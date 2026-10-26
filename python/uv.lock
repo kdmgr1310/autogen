@@ -628,6 +628,10 @@ http-tool = [
     { name = "httpx" },
     { name = "json-schema-to-pydantic" },
 ]
+spend-authority = [
+    { name = "cryptography" },
+    { name = "httpx" },
+]
 jupyter-executor = [
     { name = "ipykernel" },
     { name = "nbclient" },
@@ -753,6 +757,7 @@ requires-dist = [
     { name = "chromadb", marker = "extra == 'chromadb'", specifier = ">=1.0.0" },
     { name = "chromadb", marker = "extra == 'mem0-local'", specifier = ">=1.0.0" },
     { name = "chromadb", marker = "extra == 'task-centric-memory'", specifier = ">=1.0.0" },
+    { name = "cryptography", marker = "extra == 'spend-authority'", specifier = ">=42.0.0" },
     { name = "diskcache", marker = "extra == 'diskcache'", specifier = ">=5.6.3" },
     { name = "docker", marker = "extra == 'docker'", specifier = "~=7.0" },
     { name = "docker", marker = "extra == 'docker-jupyter-executor'", specifier = "~=7.0" },
@@ -761,6 +766,7 @@ requires-dist = [
     { name = "graphrag", marker = "extra == 'graphrag'", specifier = ">=2.3.0" },
     { name = "grpcio", marker = "extra == 'grpc'", specifier = "~=1.70.0" },
     { name = "httpx", marker = "extra == 'http-tool'", specifier = ">=0.27.0" },
+    { name = "httpx", marker = "extra == 'spend-authority'", specifier = ">=0.27.0" },
     { name = "ipykernel", marker = "extra == 'jupyter-executor'", specifier = ">=6.29.5" },
     { name = "json-schema-to-pydantic", marker = "extra == 'http-tool'", specifier = ">=0.2.0" },
     { name = "langchain-core", marker = "extra == 'langchain'", specifier = "~=0.3.3" },
@@ -804,7 +810,7 @@ requires-dist = [
     { name = "unidiff", marker = "extra == 'canvas'", specifier = ">=0.7.5" },
     { name = "websockets", marker = "extra == 'docker-jupyter-executor'", specifier = ">=15.0.1" },
 ]
-provides-extras = ["anthropic", "langchain", "azure", "docker", "ollama", "openai", "file-surfer", "llama-cpp", "graphrag", "chromadb", "mem0", "mem0-local", "web-surfer", "magentic-one", "video-surfer", "diskcache", "redis", "grpc", "jupyter-executor", "docker-jupyter-executor", "task-centric-memory", "semantic-kernel-core", "gemini", "semantic-kernel-google", "semantic-kernel-hugging-face", "semantic-kernel-mistralai", "semantic-kernel-ollama", "semantic-kernel-onnx", "semantic-kernel-anthropic", "semantic-kernel-pandas", "semantic-kernel-aws", "semantic-kernel-dapr", "http-tool", "semantic-kernel-all", "rich", "mcp", "canvas", "redisvl"]
+provides-extras = ["anthropic", "langchain", "azure", "docker", "ollama", "openai", "file-surfer", "llama-cpp", "graphrag", "chromadb", "mem0", "mem0-local", "web-surfer", "magentic-one", "video-surfer", "diskcache", "redis", "grpc", "jupyter-executor", "docker-jupyter-executor", "task-centric-memory", "semantic-kernel-core", "gemini", "semantic-kernel-google", "semantic-kernel-hugging-face", "semantic-kernel-mistralai", "semantic-kernel-ollama", "semantic-kernel-onnx", "semantic-kernel-anthropic", "semantic-kernel-pandas", "semantic-kernel-aws", "semantic-kernel-dapr", "http-tool", "spend-authority", "semantic-kernel-all", "rich", "mcp", "canvas", "redisvl"]
 
 [package.metadata.requires-dev]
 dev = [
